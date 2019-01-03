@@ -16,7 +16,7 @@ ALMA_API_KEY=l7xxabcdefghijklmnopqrstuvwxyz node test.js
 ## Usage
 To being using the library, require it at the top of your Node file:
 ```
-var alma = require ('exl-alma-api-lib');
+var alma = require ('almarestapi-lib');
 ```
 
 ### Async/Await

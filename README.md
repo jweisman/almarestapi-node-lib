@@ -6,7 +6,7 @@ This library makes it easy to call the Ex Libris Alma REST APIs in Node.js.
 `npm install almarestapi-lib --save` 
 
 ## API Key
-The library expects that the API key be available in an environment variable called `ALMA_API_KEY`. The API host can be optionally stored in an environment variable called `ALMA_API_HOST`. The defaut is https://api-na.hosted.exlibrisgroup.com/almaws/v1'.
+The library expects that the API key be available in an environment variable called `ALMA_API_KEY`. The API host can be optionally stored in an environment variable called `ALMA_API_HOST`. The defaut is https://api-na.hosted.exlibrisgroup.com/almaws/v1.
 
 You can call your script with the API key in the command line, as follows:
 ```

@@ -18,6 +18,9 @@ function performRequestPromise(endpoint, method, data, contentType='json') {
 }
 
 function performRequest(endpoint, method, data, callback, contentType='json') {
+  if (!API_KEY) 
+    throw new Error('No API key provided.');
+
   var dataString;
   var headers = {
     'Authorization': 'apikey ' + API_KEY,
@@ -50,8 +53,10 @@ function performRequest(endpoint, method, data, callback, contentType='json') {
     function(err, response, body) {
       var obj;
       try {
-        obj = (contentType=='json' ? 
-          JSON.parse(body) : new dom().parseFromString(body));
+        if (method != 'DELETE') {
+          obj = (contentType=='json' ? 
+            JSON.parse(body) : new dom().parseFromString(body));
+        }
         if (!err && ('' + response.statusCode).match(/^[4-5]\d\d$/)) {
           var message;
           try {

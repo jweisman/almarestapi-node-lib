@@ -1,6 +1,6 @@
 {
   "name": "almarestapi-lib",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Node.js library for calling Ex Libris Alma REST APIs",
   "main": "alma.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "Josh Weisman",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/jweisman/exl-alma-api-node/issues"
+    "url": "https://github.com/jweisman/almarestapi-node-lib/issues"
   },
-  "homepage": "https://github.com/jweisman/exl-alma-api-node#readme"
+  "homepage": "https://github.com/jweisman/almarestapi-node-lib#readme"
 }

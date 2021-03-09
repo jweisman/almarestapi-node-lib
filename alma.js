@@ -152,7 +152,7 @@ exports.deletep = function(url) {
   return performRequestPromise(url, 'DELETE', null);
 }
 
-exports.setEnvVariables = function(apiPath, apiKey) {
+exports.setOptions = function(apiKey, apiPath = API_PATH) {
   API_PATH = apiPath;
   API_KEY = apiKey;
 }

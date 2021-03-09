@@ -13,6 +13,12 @@ You can call your script with the API key in the command line, as follows:
 ALMA_APIKEY=l7xxabcdefghijklmnopqrstuvwxyz node test.js 
 ```
 
+Alternatively, the key and/or path can be set using the `setOptions` method, as follows:
+```
+const alma = require('almarestapi-lib');
+alma.setOptions('l7xx...');
+```
+
 ## Usage
 To being using the library, require it at the top of your Node file:
 ```

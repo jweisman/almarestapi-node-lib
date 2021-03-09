@@ -3,8 +3,8 @@ var xpath      = require('xpath');
 var dom        = require('xmldom').DOMParser;
 var serializer = require('xmldom').XMLSerializer;
 
-const API_PATH = process.env.ALMA_APIPATH || 'https://api-na.hosted.exlibrisgroup.com/almaws/v1';
-const API_KEY  = process.env.ALMA_APIKEY;
+var API_PATH = process.env.ALMA_APIPATH || 'https://api-na.hosted.exlibrisgroup.com/almaws/v1';
+var API_KEY  = process.env.ALMA_APIKEY;
 const ALMAWS_NS = {"alma": "http://com/exlibris/urm/general/xmlbeans"};
 const XPATH_ALMAWS_ERROR = '/alma:web_service_result/alma:errorList/alma:error/alma:errorMessage';
 
@@ -152,4 +152,9 @@ exports.delete = function(url, callback) {
 
 exports.deletep = function(url) {
   return performRequestPromise(url, 'DELETE', null);
+}
+
+exports.setOptions = function(apiKey, apiPath = API_PATH) {
+  API_PATH = apiPath;
+  API_KEY = apiKey;
 }

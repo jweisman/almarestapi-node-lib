@@ -54,6 +54,8 @@ function performRequest(endpoint, method, data, callback, contentType='json') {
       var obj;
       try {
         if (method != 'DELETE') {
+          if (body=='') body = contentType=='json' ? 
+            'null' : '<root/>';
           obj = (contentType=='json' ? 
             JSON.parse(body) : new dom().parseFromString(body));
         }

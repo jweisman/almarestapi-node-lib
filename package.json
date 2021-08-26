@@ -1,6 +1,6 @@
 {
   "name": "almarestapi-lib",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A Node.js library for calling Ex Libris Alma REST APIs",
   "main": "alma.js",
   "scripts": {
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "request": "~2",
-    "xmldom": ">=0.1.27",
+    "@xmldom/xmldom": "~0.7.0",
     "xpath": ">=0.0.27"
   },
   "author": "Josh Weisman",

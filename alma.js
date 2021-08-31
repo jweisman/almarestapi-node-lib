@@ -1,7 +1,7 @@
 var request    = require('request');
 var xpath      = require('xpath');
-var dom        = require('xmldom').DOMParser;
-var serializer = require('xmldom').XMLSerializer;
+var dom        = require('@xmldom/xmldom').DOMParser;
+var serializer = require('@xmldom/xmldom').XMLSerializer;
 
 var API_PATH = process.env.ALMA_APIPATH || 'https://api-na.hosted.exlibrisgroup.com/almaws/v1';
 var API_KEY  = process.env.ALMA_APIKEY;

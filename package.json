@@ -1,6 +1,6 @@
 {
   "name": "almarestapi-lib",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A Node.js library for calling Ex Libris Alma REST APIs",
   "main": "alma.js",
   "scripts": {

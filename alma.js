@@ -118,6 +118,18 @@ exports.postp = function(url, data) {
   return performRequestPromise(url, 'POST', data);
 }
 
+exports.postXml = function(url, data, callback) {
+  performRequest(url, 'POST', data, 
+    function(err, data) {
+      if (err) callback(err);
+      else callback(null, data);
+    }, 'xml');
+};
+
+exports.postXmlp = function(url, data) {
+  return performRequestPromise(url, 'POST', data, 'xml');
+}
+
 exports.put = function(url, data, callback) {
   performRequest(url, 'PUT', data, 
     function(err, data) {
